@@ -9,9 +9,49 @@
     href = "stylesheets.css">
 </head>
 <body>
-    <div>
-        <img src = "traversifylogo.png" width = "180" height = "180"
-        alt = "Traversify Logo">
-    </div>
+    <!--Top section of the homepage-->
+    <div class="topSection">
+        <!--Logo at the top left-->
+        <div class="logo">
+            <img src = "traversifylogo.png" width = "100" height = "100"
+            alt = "Traversify Logo">
+        </div>
+        <!--Top navigation bar-->
+        <div class="topnav">
+            <a class="active" href="Homepage.html">Home</a>
+                <!--Class active identifies what the current page in the nav bar, adjust for other pages-->
+            <a href="hotels.html">Hotels</a>
+            <a href="activities.html">Activities</a>
+            <a href="Transporation Beta.html">Restaurants</a>
+            <a href="restaurants.html">Transportation</a>
+            </div>
+        <!--Saved and Sign In links at the top right-->
+        <div class="topLinks">
+            <a href="saved.html">Saved</a>
+            <a href="Sign In Page.html"><button>Sign In</button></a>
+            </div>
+      </div>
+
+<!--Search bar area-->
+<div class = "form">
+    <form method = "post" action = "locationSearch.html">
+        <div class = "form">
+        <p><label>Where would you like to go?
+            <input type = "text" name = "location" maxlength = "30" required>
+        </label>
+        
+        <input type = "submit" value = "Search">
+        </p>   
+    </form>
+</div>
+
+<!--Bottom section of the page-->
+<div class="bottomSection">
+    <div class="bottomLinks">
+        <a href="aboutUs.html">About Us</a>
+        <a href="Contact_Us_Page.html">Contact Us</a>
+        </div>
+</div>
+
 </body>
 </html>
