@@ -9,49 +9,54 @@
     href = "stylesheets.css">
 </head>
 <body>
-    <!--Top section of the homepage-->
-    <div class="topSection">
-        <!--Logo at the top left-->
-        <div class="logo">
-            <img src = "traversifylogo.png" width = "100" height = "100"
-            alt = "Traversify Logo">
-        </div>
-        <!--Top navigation bar-->
-        <div class="topnav">
-            <a class="active" href="Homepage.html">Home</a>
-                <!--Class active identifies what the current page in the nav bar, adjust for other pages-->
-            <a href="hotels.html">Hotels</a>
-            <a href="Activities Page.html">Activities</a>
-            <a href="restaurants">Restaurants</a>
-            <a href="Transporation Beta.html">Transportation</a>
+    <!--Code that will be used on all pages of the site-->
+    <!--Just copy and paste this part on every site page-->
+        <!--Top section of the website-->
+        <div class="topSection">
+            <!--Logo at the top left-->
+            <div class="logo">
+                <img src = "traversifylogo.png" width = "100" height = "100"
+                alt = "Traversify Logo">
             </div>
-        <!--Saved and Sign In links at the top right-->
-        <div class="topLinks">
-            <a href="saved.html">Saved</a>
-            <a href="Sign In Page.html"><button>Sign In</button></a>
-            </div>
-      </div>
-
-<!--Search bar area-->
-<div class = "form">
-    <form method = "post" action = "locationSearch.html">
-        <div class = "form">
-        <p><label>Where would you like to go?
-            <input type = "text" name = "location" maxlength = "30" required>
-        </label>
-        
-        <input type = "submit" value = "Search">
-        </p>   
-    </form>
-</div>
-
-<!--Bottom section of the page-->
-<div class="bottomSection">
-    <div class="bottomLinks">
-        <a href="About Us Page.html">About Us</a>
-        <a href="Contact_Us_Page.html">Contact Us</a>
+            <!--Top navigation bar-->
+            <div class="topnav">
+                <a class="active" href="Homepage.html">Home</a>
+                    <!--Class active identifies what the current page in the nav bar, adjust for other pages-->
+                <a href="hotels.html">Hotels</a>
+                <a href="activities.html">Activities</a>
+                <a href="Transporation Beta.html">Restaurants</a>
+                <a href="restaurants.html">Transportation</a>
+                </div>
+            <!--Saved and Sign In links at the top right-->
+            <div class="topLinks">
+                <a href="saved.html">Saved</a>
+                <a href="Sign In Page.html"><button>Sign In</button></a>
+                </div>
         </div>
-</div>
+
+        <!--Bottom section of the website-->
+        <div class="bottomSection">
+            <div class="bottomLinks">
+                <a href="aboutUs.html">About Us</a>
+                <a href="Contact_Us_Page.html">Contact Us</a>
+                </div>
+        </div>
+
+
+    <!--Code for the homepage-->
+    <!--Search bar area-->
+    <div class = "homepage">
+        <form method = "post" action = "locationSearch.html">
+            <p><label>Where would you like to go?
+                <input type = "text" name = "location" maxlength = "30" required>
+            </label>
+            
+            <input type = "submit" value = "Search">
+            </p>   
+        </form>
+    </div>
+
+
 
 </body>
 </html>
