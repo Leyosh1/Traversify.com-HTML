@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Transportation</title>
     <link rel = "stylesheet" type = "text/css"
     href = "stylesheets.css">
 
+    <style type="text/css">
+        body   { background-image: url("cars.jpg");
+               background-repeat: no-repeat;
+               background-size:cover; }
+       </style>
 </head>
 <body>
     <!--Code that will be used on all pages of the site-->
@@ -21,11 +26,11 @@
             </div>
             <!--Top navigation bar-->
             <div class="topnav">
-                <a class="active" href="Homepage.html">Home</a>
+                <a href="Homepage.html">Home</a>
                     <!--Class active identifies what the current page in the nav bar, adjust for other pages-->
                 <a href="hotels.html">Hotels</a>
                 <a href="Activities Page.html">Activities</a>
-                <a href="transportation.html">Transportation</a>
+                <a class="active" href="transportation.html">Transportation</a>
                 <a href="restaurants.html">Restaurants</a>
                 </div>
             <!--Saved and Sign In links at the top right-->
@@ -42,22 +47,17 @@
                 <a href="Contact_Us_Page.html">Contact Us</a>
                 </div>
         </div>
-
-
-    <!--Code for the homepage-->
-    <!--Search bar area-->
-    <div class = "homepage">
-        <form method = "post" action = "locationSearch.html">
-            <p><label>Where would you like to go?
-                <input type = "text" name = "location" maxlength = "30" required>
-            </label>
-            
-            <input type = "submit" value = "Search">
-            </p>   
-        </form>
+    
+    <div class="transport">
+        <h1>List of different transportation Options Based on Location</h1>
+        <p><strong> To Check your Current Location </strong></p>
+        <a href = "https://maps.google.com"> Google Map Location</a>
+        <p><strong> Click the links below to visit the Transporation Service Website or Download on App/Play Store </strong></p>
+        <ul>
+            <li><a href = "https://www.uber.com/"> Uber</a></li>
+            <li><a href = "https://www.lyft.com"> Lyft</a></li>
+        </ul>
     </div>
-
-
-
+    
 </body>
 </html>

@@ -7,7 +7,12 @@
     <title>Homepage</title>
     <link rel = "stylesheet" type = "text/css"
     href = "stylesheets.css">
-
+    
+    <style type="text/css">
+        body   { background-image: url("hotelpic.jpg");
+               background-repeat: no-repeat;
+               background-size:cover; }
+       </style>
 </head>
 <body>
     <!--Code that will be used on all pages of the site-->
@@ -21,9 +26,9 @@
             </div>
             <!--Top navigation bar-->
             <div class="topnav">
-                <a class="active" href="Homepage.html">Home</a>
+                <a href="Homepage.html">Home</a>
                     <!--Class active identifies what the current page in the nav bar, adjust for other pages-->
-                <a href="hotels.html">Hotels</a>
+                <a class="active" href="hotels.html">Hotels</a>
                 <a href="Activities Page.html">Activities</a>
                 <a href="transportation.html">Transportation</a>
                 <a href="restaurants.html">Restaurants</a>
@@ -48,7 +53,7 @@
     <!--Search bar area-->
     <div class = "homepage">
         <form method = "post" action = "locationSearch.html">
-            <p><label>Where would you like to go?
+            <p><label>Where would you like to stay?
                 <input type = "text" name = "location" maxlength = "30" required>
             </label>
             
