@@ -204,15 +204,14 @@
         display: block;
     }
 
-/*Code for the Transportation page */
-    .transport {
+/*Code for each location page */
+    .locationInfo {
         position: fixed;
             top: 150px;
             left: 0;
             right: 0;
         background-color: white;
         max-width: 70%;
-        height: 70%;
         margin: auto;
         padding:20px;
         text-align: left;
