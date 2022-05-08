@@ -9,42 +9,67 @@
     href = "stylesheets.css">
     
     <style type="text/css">
-        body   { background-image: url("restaurantpic.jpg");
+        body   { background-image: url("backgroundRestaurants.jpg");
                background-repeat: no-repeat;
                background-size:cover; }
        </style>
+
+<script>
+    function getCity()
+     {
+        //Pulls values from the input fields
+        var cityField = document.getElementById("city");
+
+        //Converts the value so that it can be compared
+        var cityVal = cityField.value;
+        
+        //Redirects to the correct document based on the selected option
+        if (cityVal === "sf") {
+            document.writeln(cityVal);
+            //window.location.href = "Homepage.html";
+        } else if (cityVal === "sd") {
+            document.writeln(cityVal);
+        } else if (cityVal === "sac") {
+            document.writeln(cityVal);
+        } else if (cityVal === "sj") {
+            document.writeln(cityVal);
+        }
+    }
+     
+</script>
 </head>
 <body>
-    <!--Code that will be used on all pages of the site-->
+     <!--Code that will be used on all pages of the site-->
     <!--Just copy and paste this part on every site page-->
         <!--Top section of the website-->
         <div class="topSection">
             <!--Logo at the top left-->
             <div class="logo">
-                <img src = "traversifylogo.png" width = "100" height = "100"
-                alt = "Traversify Logo">
+                <a href="homepage.html">
+                <img src = "traversifyLogo.png" width = "100" height = "100"
+                alt = "Traversify Logo"></a>
             </div>
             <!--Top navigation bar-->
             <div class="topnav">
-                <a href="Homepage.html">Home</a>
+                <a href="homepage.html">Home</a>
                     <!--Class active identifies what the current page in the nav bar, adjust for other pages-->
                 <a href="hotels.html">Hotels</a>
-                <a href="Activities Page.html">Activities</a>
+                <a href="activities.html">Activities</a>
                 <a href="transportation.html">Transportation</a>
                 <a class="active" href="restaurants.html">Restaurants</a>
                 </div>
             <!--Saved and Sign In links at the top right-->
             <div class="topLinks">
-                <a href="saved.html">Saved</a>
-                <a href="Sign_In_Page.html"><button>Sign In</button></a>
+                <a href="savedPlaces.html">Saved</a>
+                <a href="signIn.html"><button>Sign In</button></a>
                 </div>
         </div>
 
         <!--Bottom section of the website-->
         <div class="bottomSection">
             <div class="bottomLinks">
-                <a href="about us.html">About Us</a>
-                <a href="Contact_Us_Page.html">Contact Us</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="contactUs.html">Contact Us</a>
                 </div>
         </div>
 
@@ -52,14 +77,18 @@
     <!--Code for the homepage-->
     <!--Search bar area-->
     <div class = "homepage">
-        <form method = "post" action = "locationSearch.html">
-            <p><label>What would you like to eat?
-                <input type = "text" name = "location" maxlength = "30" required>
-            </label>
-            
-            <input type = "submit" value = "Search">
-            </p>   
-        </form>
+
+        <form action="javascript:getCity();">
+            <label for="city">What to eat in...</label>
+            <select name="city" id="city">
+                <option value="none">Select a location</option>
+              <option value="sf">San Francisco, California</option>
+              <option value="sd">San Diego, California</option>
+              <option value="sac">Sacramento, California</option>
+              <option value="sj">San Jose, California</option>
+            </select>
+            <input type="submit" value="GO">
+          </form> 
     </div>
 
 

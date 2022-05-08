@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities</title>
+    <link rel = "stylesheet" type = "text/css"
+    href = "stylesheets.css">
+
+    <style type="text/css">
+      body   { background-image: url("backgroundActivities.jpg");
+             background-repeat: no-repeat;
+             background-size:cover; }
+     </style>
+
+    <script>
+      function getCity()
+       {
+          //Pulls values from the input fields
+          var cityField = document.getElementById("city");
+
+          //Converts the value so that it can be compared
+          var cityVal = cityField.value;
+          
+          //Redirects to the correct document based on the selected option
+          if (cityVal === "sf") {
+              document.writeln(cityVal);
+              //window.location.href = "Homepage.html";
+          } else if (cityVal === "sd") {
+              document.writeln(cityVal);
+          } else if (cityVal === "sac") {
+              document.writeln(cityVal);
+          } else if (cityVal === "sj") {
+              document.writeln(cityVal);
+          }
+      }
+       
+  </script>
+
+
+</head>
+<body>
+
+  <!--
+<p>
+  <label for="textfield"><img src="traversifylogo.png" width="96" height="100" alt=""/>
+	  Need ideas to do at on your vacation? <br>
+    Look for activities you would like to do:</label>
+  <input type="text" name="textfield" id="textfield">
+  <input type="button" name="button" id="button" value="Search">
+</p>
+<p>
+  <label>
+    <input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1_0">
+    Restaurants</label>
+  <br>
+  <label>
+    <input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1_1">
+    Hotels</label>
+  <br>
+  <label>
+    <input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1_2">
+    Outdoor Activities</label>
+  <br>
+  <label>
+    <input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1_3">
+    Indoor Activities</label>
+  <br>
+</p>
+<p>
+  <input type="image" name="imageField" id="imageField" src="Placement_Area.png">
+</p>
+<p>&nbsp;</p>
+-->
+
+<!--Code that will be used on all pages of the site-->
+    <!--Just copy and paste this part on every site page-->
+        <!--Top section of the website-->
+        <div class="topSection">
+          <!--Logo at the top left-->
+          <div class="logo">
+            <a href="homepage.html">
+            <img src = "traversifyLogo.png" width = "100" height = "100"
+            alt = "Traversify Logo"></a>
+        </div>
+          <!--Top navigation bar-->
+          <div class="topnav">
+              <a href="homepage.html">Home</a>
+                  <!--Class active identifies what the current page in the nav bar, adjust for other pages-->
+              <a href="hotels.html">Hotels</a>
+              <a class="active" href="activities.html">Activities</a>
+              <a href="transportation.html">Transportation</a>
+              <a href="restaurants.html">Restaurants</a>
+              </div>
+          <!--Saved and Sign In links at the top right-->
+          <div class="topLinks">
+              <a href="savedPlaces.html">Saved</a>
+              <a href="signIn.html"><button>Sign In</button></a>
+              </div>
+      </div>
+
+      <!--Bottom section of the website-->
+      <div class="bottomSection">
+          <div class="bottomLinks">
+              <a href="aboutUs.html">About Us</a>
+              <a href="contactUs.html">Contact Us</a>
+              </div>
+      </div>
+
+<div class = "homepage">
+  <form action="javascript:getCity();">
+      <label for="city">What to do in...</label>
+      <select name="city" id="city">
+          <option value="none">Select a location</option>
+        <option value="sf">San Francisco, California</option>
+        <option value="sd">San Diego, California</option>
+        <option value="sac">Sacramento, California</option>
+        <option value="sj">San Jose, California</option>
+      </select>
+      <input type="submit" value="GO">
+    </form> 
+</div>
+
+</body>
+</html>

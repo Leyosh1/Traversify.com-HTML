@@ -2,7 +2,7 @@
 /*Just copy and paste the HTML for the top and bottom section, don't mess with their CSS */
     /*Site background */
     body {
-        background-image: url("beach.jpg");
+        background-image: url("backgroundSite.jpg");
         background-repeat: no-repeat;
         background-size:cover;
         }
@@ -93,6 +93,13 @@
             padding: 5px;
         }
 
+        /*Style change for the current page in the navigation bar */
+        .bottomLinks a.active {
+            color: black;
+            font-weight: bold;
+            text-decoration: underline;
+            }
+
 
 
 /*Code for the homepage */
@@ -111,10 +118,10 @@
         text-align: left;
 }
 
-    /*Text-entry box */
-    .homepage input[type="text"] {
+    /*Drop-down box */
+    .homepage select {
         background-color: white;
-        width: 370px;
+        width: 430px;
         margin : 0 auto;
         padding: 10px;
         font-size: 12pt;
@@ -132,7 +139,7 @@
         cursor:pointer;
     }
 
-    /*Label above the text-entry box */
+    /*Label above the drop-down box */
     .homepage label {
         width: 500px;
         font-weight:bold;
@@ -156,10 +163,24 @@
         text-align: left;
 }
 
-    /*Text-entry box */
+    /*Name and email input boxes */
     .contactUs input[type="text"] {
         background-color: white;
         width: 370px;
+        margin-right: 50px;
+        padding: 10px;
+        font-size: 12pt;
+        border-color: black;
+        border-style: solid;
+        border-width: 2px;
+        display: block;
+    }
+
+
+    .contactUs textarea {
+        background-color: white;
+        width: 1260px;
+        height: 350px;
         margin-right: 50px;
         padding: 10px;
         font-size: 12pt;
@@ -204,6 +225,29 @@
         display: block;
     }
 
+
+/*Code for the About Us page */
+    .aboutTitle {
+        text-align: center;
+        font-style: italic;
+        font-size: 26px;
+    }
+
+    .aboutTeam {
+        text-align: left;
+
+    }
+
+    .aboutDescription {
+        margin-left: auto;
+    }
+
+    .aboutMission {
+        text-align: center;
+        font-stretch: condensed;
+    }
+
+    
 /*Code for each location page */
     .locationInfo {
         position: fixed;
@@ -215,4 +259,6 @@
         margin: auto;
         padding:20px;
         text-align: left;
-}
+        height: 720px;
+        overflow-y:auto;
+    }

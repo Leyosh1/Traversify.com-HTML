@@ -8,39 +8,32 @@
     <link rel = "stylesheet" type = "text/css"
     href = "stylesheets.css">
     
-    <style type="text/css">
-        body   { background-image: url("backgroundHotels.jpg");
-               background-repeat: no-repeat;
-               background-size:cover; }
-       </style>
+    <script>
+        function getCity()
+         {
+            //Pulls values from the input fields
+            var cityField = document.getElementById("city");
 
-<script>
-    function getCity()
-     {
-        //Pulls values from the input fields
-        var cityField = document.getElementById("city");
-
-        //Converts the value so that it can be compared
-        var cityVal = cityField.value;
-        
-        //Redirects to the correct document based on the selected option
-        if (cityVal === "sf") {
-            document.writeln(cityVal);
-            //window.location.href = "Homepage.html";
-        } else if (cityVal === "sd") {
-            document.writeln(cityVal);
-        } else if (cityVal === "sac") {
-            document.writeln(cityVal);
-        } else if (cityVal === "sj") {
-            document.writeln(cityVal);
+            //Converts the value so that it can be compared
+            var cityVal = cityField.value;
+            
+            //Redirects to the correct document based on the selected option
+            if (cityVal === "sf") {
+                document.writeln(cityVal);
+                //window.location.href = "Homepage.html";
+            } else if (cityVal === "sd") {
+                document.writeln(cityVal);
+            } else if (cityVal === "sac") {
+                document.writeln(cityVal);
+            } else if (cityVal === "sj") {
+                document.writeln(cityVal);
+            }
         }
-    }
-     
-</script>
-
+         
+    </script>
 </head>
 <body>
-     <!--Code that will be used on all pages of the site-->
+    <!--Code that will be used on all pages of the site-->
     <!--Just copy and paste this part on every site page-->
         <!--Top section of the website-->
         <div class="topSection">
@@ -52,9 +45,9 @@
             </div>
             <!--Top navigation bar-->
             <div class="topnav">
-                <a href="homepage.html">Home</a>
+                <a class="active" href="homepage.html">Home</a>
                     <!--Class active identifies what the current page in the nav bar, adjust for other pages-->
-                <a class="active" href="hotels.html">Hotels</a>
+                <a href="hotels.html">Hotels</a>
                 <a href="activities.html">Activities</a>
                 <a href="transportation.html">Transportation</a>
                 <a href="restaurants.html">Restaurants</a>
@@ -79,7 +72,7 @@
     <!--Search bar area-->
     <div class = "homepage">
         <form action="javascript:getCity();">
-            <label for="city">Where to stay in...</label>
+            <label for="city">Where would you like to go?</label>
             <select name="city" id="city">
                 <option value="none">Select a location</option>
               <option value="sf">San Francisco, California</option>
