@@ -163,7 +163,7 @@
         text-align: left;
 }
 
-    /*Name and email input boxes */
+    /*Name input box */
     .contactUs input[type="text"] {
         background-color: white;
         width: 370px;
@@ -176,7 +176,20 @@
         display: block;
     }
 
+    /*Email input box */
+    .contactUs input[type="email"] {
+        background-color: white;
+        width: 370px;
+        margin-right: 50px;
+        padding: 10px;
+        font-size: 12pt;
+        border-color: black;
+        border-style: solid;
+        border-width: 2px;
+        display: block;
+    }
 
+    /*Comment input box */
     .contactUs textarea {
         background-color: white;
         width: 1260px;
@@ -191,7 +204,7 @@
     }
 
     /*Submit button */
-    .contactUs input[type="submit"] {
+    .contactUs button {
         text-transform: uppercase;
         margin: auto;
         margin-top: 10px;
