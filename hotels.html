@@ -25,8 +25,7 @@
         
         //Redirects to the correct document based on the selected option
         if (cityVal === "sf") {
-            document.writeln(cityVal);
-            //window.location.href = "Homepage.html";
+            window.location.href = "locationSample.html#locationHotels";
         } else if (cityVal === "sd") {
             document.writeln(cityVal);
         } else if (cityVal === "sac") {
@@ -54,10 +53,10 @@
             <div class="topnav">
                 <a href="homepage.html">Home</a>
                     <!--Class active identifies what the current page in the nav bar, adjust for other pages-->
-                <a class="active" href="hotels.html">Hotels</a>
                 <a href="activities.html">Activities</a>
-                <a href="transportation.html">Transportation</a>
                 <a href="restaurants.html">Restaurants</a>
+                <a class="active" href="hotels.html">Hotels</a>
+                <a href="transportation.html">Transportation</a>
                 </div>
             <!--Saved and Sign In links at the top right-->
             <div class="topLinks">
@@ -77,7 +76,7 @@
 
     <!--Code for the homepage-->
     <!--Search bar area-->
-    <div class = "homepage">
+    <div class = "mainPage">
         <form action="javascript:getCity();">
             <label for="city">Where to stay in...</label>
             <select name="city" id="city">
