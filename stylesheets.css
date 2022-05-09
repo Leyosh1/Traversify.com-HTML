@@ -53,12 +53,6 @@
             float: left;
         }
 
-        /*Saved and sign in links */
-        .topLinks {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-        }
 
         /*Top navigation bar space between links */
         .topnav a {
@@ -276,10 +270,28 @@
     }
 
     .locationInfo iframe {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .locationInfo img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+
+    /*.locationInfo iframe {
         float: right;
+        display: inline;
     }
 
     .locationInfo img {
         float: right;
+        display: inline;
+        margin-left:auto;
+        margin-right:auto;
     }
+    */
 

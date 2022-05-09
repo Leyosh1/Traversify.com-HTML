@@ -24,14 +24,14 @@
           var cityVal = cityField.value;
           
           //Redirects to the correct document based on the selected option
-          if (cityVal === "sf") {
-              window.location.href = "locationSample.html#locationActivities";
-          } else if (cityVal === "sd") {
-              document.writeln(cityVal);
-          } else if (cityVal === "sac") {
-              document.writeln(cityVal);
+          if (cityVal === "lv") {
+             window.location.href = "LocationLasVegas.html#locationActivities";
+          } else if (cityVal === "la") {
+              window.location.href = "LocationLosAngeles.html#locationActivities";
+          } else if (cityVal === "ny") {
+              window.location.href = "LocationNewYork.html#locationActivities";
           } else if (cityVal === "sj") {
-              document.writeln(cityVal);
+              window.location.href = "LocationSanJose.html#locationActivities";
           }
       }
        
@@ -92,11 +92,6 @@
             <a href="hotels.html">Hotels</a>
             <a href="transportation.html">Transportation</a>
               </div>
-          <!--Saved and Sign In links at the top right-->
-          <div class="topLinks">
-              <a href="savedPlaces.html">Saved</a>
-              <a href="signIn.html"><button>Sign In</button></a>
-              </div>
       </div>
 
       <!--Bottom section of the website-->
@@ -112,10 +107,10 @@
       <label for="city">What to do in...</label>
       <select name="city" id="city">
           <option value="none">Select a location</option>
-        <option value="sf">San Francisco, California</option>
-        <option value="sd">San Diego, California</option>
-        <option value="sac">Sacramento, California</option>
-        <option value="sj">San Jose, California</option>
+        <option value="lv">Las Vegas, Nevada, United States of America</option>
+        <option value="la">Los Angeles, California, United States of America</option>
+        <option value="ny">New York City, New York, United States of America</option>
+        <option value="sj">San Jose, California, United States of America</option>
       </select>
       <input type="submit" value="GO">
     </form> 
