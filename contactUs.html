@@ -48,15 +48,15 @@
         <!--Contact Us form-->
         <form method = "post" action = "contactSubmit.html">
             <p><label>Name
-                <input type = "text" name = "name" maxlength = "30" required>
+                <input type = "text" name = "name" id="name" maxlength = "30" required>
             </label>
             
             <label>Email
-                <input type = "email" name = "email" required>
+                <input type = "email" name = "email" id="email" required>
             </label>
             
             <label>Subject
-                <textarea name = "comment"></textarea>
+                <textarea name = "comment" id="comment" required></textarea>
             </label>
             
             <!--<input type = "submit" value = "Submit">-->
@@ -65,6 +65,10 @@
         </form>
     </div>
 
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"> </script> 
+<script src="contactUsJavaScript.js"></script
 
 </body>
 </html>

@@ -134,6 +134,7 @@
         background-color: rgb(100, 100, 100);
         font-size: 12pt;
         cursor:pointer;
+        width: 45px;
     }
 
     /*Label above the drop-down box */
@@ -214,6 +215,7 @@
         position:fixed;
             left: 0;
             right: 0;
+        width: 100px;
     }
 
     /*Label above the text-entry box */
