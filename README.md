@@ -1,4 +1,5 @@
 # Traversify.com-HTML
+<br>
 Sources for images:
 Backgrounds
   Homepage - https://cdn.sandals.com/beaches/v12/images/general/destinations/home/beach.jpg
