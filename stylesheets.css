@@ -108,7 +108,7 @@
             left: 0;
             right: 0;
         background-color: white;
-        width: 525px;
+        width: 525px; 
         height: 150px;
         margin: auto;
         padding:20px;
@@ -147,7 +147,7 @@
 
 
 /*Code for the Contact Us page */
-    /*Contact us form */
+    /*Contact us form*/
     .contactUs {
         position: absolute;
             top: 150px;
@@ -160,7 +160,7 @@
         padding:20px;
         text-align: left;
         overflow-y: auto;
-}
+    }
 
     /*Name input box */
     .contactUs input[type="text"] {
@@ -257,6 +257,7 @@
     .locationInfo {
         position: fixed;
             top: 150px;
+            bottom: 70px;
             left: 0;
             right: 0;
         background-color: white;
@@ -264,7 +265,6 @@
         margin: auto;
         padding:20px;
         text-align: left;
-        height: 75%;
         overflow-y:auto;
     }
 
@@ -280,18 +280,3 @@
         display: block;
         width: 80%;
     }
-    
-
-    /*.locationInfo iframe {
-        float: right;
-        display: inline;
-    }
-
-    .locationInfo img {
-        float: right;
-        display: inline;
-        margin-left:auto;
-        margin-right:auto;
-    }
-    */
-
