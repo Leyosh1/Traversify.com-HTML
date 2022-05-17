@@ -4,7 +4,7 @@
     body {
         background-image: url("backgroundSite.jpg");
         background-repeat: no-repeat;
-        background-size:cover;
+        background-size: 1920px;
         }
     
     /*Indents the element when used as a class name */
@@ -29,7 +29,7 @@
             background-color: white;
             height: 100px;
             text-align: center;
-            position:absolute;
+            position:fixed;
                 top:0;
                 left:0;
             width: 100%;
@@ -50,7 +50,7 @@
         /*Site logo at the top left */
         .logo {
             text-align: left;
-            float: left;
+
         }
 
 
@@ -108,8 +108,8 @@
             left: 0;
             right: 0;
         background-color: white;
-        max-width: 500px;
-        height: 100px;
+        width: 525px;
+        height: 150px;
         margin: auto;
         padding:20px;
         text-align: left;
@@ -118,7 +118,7 @@
     /*Drop-down box */
     .mainPage select {
         background-color: white;
-        width: 430px;
+        width: 400px;
         margin : 0 auto;
         padding: 10px;
         font-size: 12pt;
@@ -134,7 +134,7 @@
         background-color: rgb(100, 100, 100);
         font-size: 12pt;
         cursor:pointer;
-        width: 45px;
+
     }
 
     /*Label above the drop-down box */
@@ -149,13 +149,13 @@
 /*Code for the Contact Us page */
     /*Contact us form */
     .contactUs {
-        position: fixed;
+        position: absolute;
             top: 150px;
             left: 0;
             right: 0;
         background-color: white;
-        max-width: 70%;
-        height: 60%;
+        width: 52%;
+        height: 65%;
         margin: auto;
         padding:20px;
         text-align: left;
@@ -173,6 +173,8 @@
         border-style: solid;
         border-width: 2px;
         display: block;
+        font-weight: 400;
+        
     }
 
     /*Email input box */
@@ -186,20 +188,22 @@
         border-style: solid;
         border-width: 2px;
         display: block;
+        font-weight: 400;
+        
     }
 
-    /*Comment input box */
+    /*Comment input box*/
     .contactUs textarea {
         background-color: white;
-        width: 345%;
-        height: 70%;
-        margin-right: 50px;
-        padding: 10px;
+        width: 910px;
+        height: 250px;
         font-size: 12pt;
         border-color: black;
         border-style: solid;
         border-width: 2px;
         display: block;
+        font-weight: 400;
+        
     }
 
     /*Submit button */
@@ -216,7 +220,8 @@
         position:absolute;
             left: 0;
             right: 0;
-        width: 10%;
+        width: 100px;
+        
     }
 
     /*Label above the text-entry box */
@@ -225,6 +230,7 @@
         margin-top: 10px;
         color: black;
         display: inline-block;
+        
         text-align: left;
     }
 
@@ -254,11 +260,11 @@
             left: 0;
             right: 0;
         background-color: white;
-        max-width: 70%;
+        width: 80%;
         margin: auto;
         padding:20px;
         text-align: left;
-        height: 60%;
+        height: 75%;
         overflow-y:auto;
     }
 
